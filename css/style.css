@@ -12,18 +12,34 @@
   .bodyIndex header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px #ccc solid;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     margin-bottom: 30px; }
     .bodyIndex header a {
       text-decoration: none; }
     .bodyIndex header .logoJulian {
-      margin: 15px;
-      font-size: 1.25em;
-      color: #e2e2e2;
-      transition: all 0.4s ease; }
+      margin-left: 15px;
+      width: 35px;
+      filter: invert(75%) sepia(96%) saturate(1%) hue-rotate(20deg) brightness(94%) contrast(110%);
+      transition: all 0.1s linear; }
       .bodyIndex header .logoJulian:hover {
-        color: #ff7d00; }
+        filter: invert(48%) sepia(90%) saturate(1871%) hue-rotate(0deg) brightness(103%) contrast(104%); }
+    .bodyIndex header .logoAfter {
+      height: 35px; }
+      .bodyIndex header .logoAfter::after {
+        opacity: 0;
+        position: absolute;
+        top: 15px;
+        left: -100%;
+        content: "Julian Lobos";
+        font-weight: 600;
+        color: #ff7d00;
+        padding-left: 10px;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+      .bodyIndex header .logoAfter:hover::after {
+        opacity: 1;
+        left: 55px; }
     .bodyIndex header .headerList {
       margin: 15px;
       list-style: none; }
@@ -36,6 +52,18 @@
           transition: all 0.4s ease; }
           .bodyIndex header .headerList .listItem a:hover {
             color: #ff7d00; }
+    .bodyIndex header .hamburgerIndex {
+      width: 28px;
+      height: 30px;
+      margin: 10px 15px;
+      display: none; }
+      .bodyIndex header .hamburgerIndex div {
+        width: 100%;
+        height: 5px;
+        background: white;
+        margin: 4px auto;
+        transition: all 0.3s;
+        backface-visibility: hidden; }
   .bodyIndex main {
     display: flex;
     flex-direction: column;
@@ -80,13 +108,16 @@
     background-color: rgba(245, 245, 245, 0.85);
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
-    .bodySignUp header .logoSignUp {
-      padding-left: 15px;
-      margin-left: 15px; }
     .bodySignUp header a {
       color: #e2e2e2;
       text-decoration: none;
       font-weight: 600; }
+      .bodySignUp header a .logoSignUp {
+        filter: invert(9%) sepia(99%) saturate(5017%) hue-rotate(277deg) brightness(80%) contrast(97%);
+        width: 45px;
+        padding-left: 15px;
+        transition: all 0.4s ease;
+        margin: auto 0; }
     .bodySignUp header .btnSignIn {
       padding: 5px 15px;
       margin-right: 15px;
@@ -170,3 +201,34 @@
       .bodySignUp .signUpPage .welcomePage img {
         margin: 80px 0 15px 0;
         width: 50%; }
+
+/* ---------------------------- Media queries ---------------------------- */
+@media (max-width: 576px) {
+  /* index */
+  .bodyIndex header {
+    width: 100%; }
+    .bodyIndex header .hamburgerIndex {
+      display: inline-block; }
+    .bodyIndex header #hamburger.on .one {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .bodyIndex header #hamburger.on .two {
+      opacity: 0; }
+    .bodyIndex header #hamburger.on .three {
+      transform: rotate(-45deg) translate(7px, -8px); }
+    .bodyIndex header .headerList {
+      position: absolute;
+      right: 0px;
+      top: 51px;
+      border: 1px solid #e2e2e2;
+      background-color: #222222;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      border-radius: 3px;
+      line-height: 20px;
+      text-align: center;
+      margin: auto;
+      display: none; }
+      .bodyIndex header .headerList .listItem {
+        display: block;
+        padding: 20px; } }

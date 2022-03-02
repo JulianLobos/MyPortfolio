@@ -1,0 +1,46 @@
+/* ---------------------------- Media queries ---------------------------- */
+@media (max-width: 576px) {
+    /* index */ 
+    .bodyIndex{
+        header{
+            width: 100%;
+            .hamburgerIndex{
+                display: inline-block;
+            }
+            #hamburger.on .one {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+              
+            #hamburger.on .two {
+            opacity: 0;
+            }
+            
+            #hamburger.on .three {
+            transform: rotate(-45deg) translate(7px, -8px);
+            }
+
+            .headerList{
+                position: absolute;
+                right: 0px;
+                top: 51px;
+                border: 1px solid $white;
+                background-color: $black;
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                border-radius: 3px;
+                line-height: 20px;
+                text-align: center;
+                margin: auto;
+                display: none;
+                .listItem{
+                    display: block;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+    
+
+    
+}

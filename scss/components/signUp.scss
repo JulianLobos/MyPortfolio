@@ -15,14 +15,18 @@
         background-color: rgba(245, 245, 245, 0.85);
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        .logoSignUp{
-            padding-left: 15px;
-            margin-left: 15px;
-        }
+        
         a{
             color: $white;
             text-decoration: none;
             font-weight: 600;
+            .logoSignUp{
+                filter: invert(9%) sepia(99%) saturate(5017%) hue-rotate(277deg) brightness(80%) contrast(97%);
+                width: 45px;
+                padding-left: 15px;
+                transition: all 0.4s ease;
+                margin: auto 0;
+            }
         }
         .btnSignIn{
             padding:5px 15px;
@@ -129,7 +133,6 @@
                 margin: 80px 0 15px 0;
                 width: 50%;
             }
-
         }
     }
 }
