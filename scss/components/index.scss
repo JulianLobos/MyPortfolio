@@ -1,3 +1,4 @@
+/* -------------------------------------- ESTILOS INDEX -------------------------------------- */
 .bodyIndex{
     font-family: 'Montserrat', sans-serif;
     background-color: $black;
@@ -58,8 +59,14 @@
                 box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
                 font-size: 1.15em;
                 transition: all 0.3s ease;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    &:hover{
+                        color: $index__color-principal;
+                    }
+                }
                 &:hover{
-                    color: $index__color-principal;
                     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
                 }
             }

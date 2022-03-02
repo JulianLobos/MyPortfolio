@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* -------------------------------------- ESTILOS INDEX -------------------------------------- */
 .bodyIndex {
   font-family: 'Montserrat', sans-serif;
   background-color: #222222;
@@ -55,6 +56,73 @@
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         font-size: 1.15em;
         transition: all 0.3s ease; }
+        .bodyIndex main .projectList li a {
+          text-decoration: none;
+          color: #e2e2e2; }
+          .bodyIndex main .projectList li a:hover {
+            color: #ff7d00; }
         .bodyIndex main .projectList li:hover {
-          color: #ff7d00;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+
+/* -------------------------------------- ESTILOS SIGN UP -------------------------------------- */
+.bodySignUp {
+  font-family: 'Montserrat', sans-serif;
+  background-color: whitesmoke; }
+  .bodySignUp header {
+    position: absolute;
+    height: 45px;
+    margin: 15px 0;
+    left: 12.5%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.85);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    .bodySignUp header .logoSignUp {
+      padding-left: 15px; }
+    .bodySignUp header .btnSignIn {
+      padding-right: 15px; }
+    .bodySignUp header .menuList {
+      list-style: none; }
+      .bodySignUp header .menuList .menuItem {
+        display: inline-block;
+        padding-right: 15px; }
+  .bodySignUp .signUpPage {
+    width: 100%;
+    height: 100vh;
+    display: flex; }
+    .bodySignUp .signUpPage .formPage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%; }
+      .bodySignUp .signUpPage .formPage .formSignUp {
+        font-size: 1.5em;
+        font-weight: 600; }
+      .bodySignUp .signUpPage .formPage .formMessage {
+        color: #646464; }
+      .bodySignUp .signUpPage .formPage form label {
+        font-weight: 600; }
+      .bodySignUp .signUpPage .formPage form label:nth-child(4) {
+        font-weight: 400; }
+      .bodySignUp .signUpPage .formPage form input {
+        height: 35px;
+        border: solid 1px #ccc; }
+    .bodySignUp .signUpPage .welcomePage {
+      color: #e2e2e2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      background: linear-gradient(180deg, #d55d92 0%, #47126b 100%);
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px; }
+      .bodySignUp .signUpPage .welcomePage .welcomeTitle {
+        margin-top: 150px;
+        font-weight: 600; }
+      .bodySignUp .signUpPage .welcomePage .welcomeMessage {
+        text-align: center;
+        margin: 10px 100px; }
