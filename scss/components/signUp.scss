@@ -17,9 +17,18 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         .logoSignUp{
             padding-left: 15px;
+            margin-left: 15px;
+        }
+        a{
+            color: $white;
+            text-decoration: none;
+            font-weight: 600;
         }
         .btnSignIn{
-            padding-right: 15px;
+            padding:5px 15px;
+            margin-right: 15px;
+            background: $bg-gradient;
+            border-radius: 20px;
         }
         .menuList{
             list-style: none;
@@ -39,13 +48,18 @@
             justify-content: center;
             width: 50%;
             .formSignUp{
+                margin-left: 100px;
                 font-size: 1.5em;
                 font-weight: 600;
+                margin-bottom: 5px;
             }
             .formMessage{
+                margin-left: 100px;
                 color: rgb(100, 100, 100);
+                margin-bottom: 15px;
             }
             form{
+                margin-left: 100px;
                 label{
                     font-weight: 600;
                 }
@@ -53,8 +67,44 @@
                     font-weight: 400;
                 }
                 input{
+                    padding: 5px;
                     height: 35px;
                     border: solid 1px #ccc;
+                    margin: 5px 0 15px 0;
+                    border-radius: 20px;
+                    &:hover{
+                        border: 1px solid $bg-gradient;
+                    }
+                }
+                #termsConditions{
+                    font-weight: 400;
+                }
+                [type="checkbox"]{
+                    vertical-align: middle;
+                    padding: 0;
+                    margin: 5px 10px 10px 0;
+                }
+                [type="submit"]{
+                    width: 50%;
+                    background: $bg-gradient;
+                    color: $white;
+                    font-weight: 600;
+                    font-size: 1.1em;
+                    cursor: pointer;
+                    &:hover{
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+                }
+            }
+            .signInMessage{
+                margin-left: 100px;
+                a{
+                    text-decoration: none;
+                    color: $signUp__fondo2;
+                    font-weight: 600;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -69,12 +119,15 @@
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             .welcomeTitle{
-                margin-top: 150px;
                 font-weight: 600;
             }
             .welcomeMessage{
                 text-align: center;
                 margin: 10px 100px;
+            }
+            img{
+                margin: 80px 0 15px 0;
+                width: 50%;
             }
 
         }
