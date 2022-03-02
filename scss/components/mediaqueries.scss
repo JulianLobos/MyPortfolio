@@ -40,6 +40,58 @@
             }
         }
     }
+
+    /* Sign Up page */ 
+
+    .bodySignUp{
+        header{
+            position: static;
+            width: 100%;
+            margin: 0 0 30px 0;
+            border-radius: 0;
+        }
+        .signUpPage{
+            display: block;
+            .formPage{
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                .formSignUp{
+                    margin: 0 0 15px 0;
+                }
+                .formMessage{
+                    margin: 0 0 15px 0;
+                }
+                form{
+                    margin: 0 0 15px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    br{
+                        display: none;
+                    }
+                }
+                .signInMessage{
+                    margin: 0 0 30px 0;
+                }
+            }
+            .welcomePage{
+                width: 100%;
+                border-bottom-left-radius: 0;
+                border-top-left-radius: 40px;
+                border-top-right-radius: 40px;
+                padding-bottom: 60px;
+                text-align: center;
+                .welcomeTitle{
+                    margin: 0 30px 10px 30px;
+                }
+                .welcomeMessage{
+                    margin: 0 30px;
+                }
+            }
+        }
+    }
     
 
     
