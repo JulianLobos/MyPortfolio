@@ -1,4 +1,32 @@
 /* ---------------------------- Media queries ---------------------------- */
+@media (max-width: 768px) {
+    /* Sign Up page */ 
+    .bodySignUp{
+        .signUpPage{
+            .formPage{
+                .formSignUp{
+                    margin-left: 50px;
+                }
+                .formMessage{
+                    margin: 0 15px 15px 50px;
+                }
+                form{
+                    margin-left: 50px;
+                }
+                .signInMessage{
+                    margin: 0 15px 0 50px;
+                }
+            }
+            .welcomePage{
+                .welcomeMessage{
+                    margin: 10px 50px;
+                }
+            }
+        }
+    }
+
+}
+
 @media (max-width: 576px) {
     /* index */ 
     .bodyIndex{
@@ -49,6 +77,48 @@
             width: 100%;
             margin: 0 0 30px 0;
             border-radius: 0;
+            box-shadow: none;
+            .hamburgerSup{
+                display: inline-block;
+            }
+            #hamburgerSup.on .one {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+              
+            #hamburgerSup.on .two {
+            opacity: 0;
+            }
+            
+            #hamburgerSup.on .three {
+            transform: rotate(-45deg) translate(7px, -8px);
+            }
+
+            .menuList{
+                display: none;
+                position: absolute;
+                width: 100%;
+                top: 45px;
+                background-color: rgb(245, 245, 245);
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+                .menuItem{
+                    display: block;
+                    padding: 15px 5px;
+                    margin: 20px 0px;
+                    text-align: center;
+                    transition: all 0.2s ease;
+                    font-size: 1.1em;
+                    font-weight: 600;
+                    &:hover{
+                        background-color: $signUp__color6;
+                        a{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            a:nth-child(4){
+                display: none;
+            }
         }
         .signUpPage{
             display: block;
