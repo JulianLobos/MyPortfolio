@@ -1,0 +1,70 @@
+/* -------------------------------------- STYLES FOOTBALL CLUB PAGE -------------------------------------- */
+
+.bodyFC{
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(25, 188, 252, 0.5)), url("../img/FutbolPage/fondoFC.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    header{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 80px;
+            height: auto;
+            margin: 20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+        .menuList{
+            margin: 20px;
+            .listItem{
+                display: inline-block;
+                padding: 0 10px;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+    main{
+        .heroFC{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            .heroTitle{
+                font-family: 'League Gothic', sans-serif;
+                font-size: 5.5em;
+            }
+            .heroSubtitle{
+                font-size: 1.1em;
+            }
+        }
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .footerDerechos{
+            font-size: 0.75em;
+            margin: 5px 15px;
+            color: $white;
+        }
+        .footerRedes{
+            img{
+                width: 20px;
+                height: auto;
+                filter: invert(89%) sepia(21%) saturate(0%) hue-rotate(161deg) brightness(101%) contrast(89%);
+                margin: 5px 15px 5px 0;
+            }
+        }
+    }
+}
