@@ -2,9 +2,6 @@
 
 .bodyFC{
     font-family: 'Raleway', sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(25, 188, 252, 0.5)), url("../img/FutbolPage/fondoFC.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     header{
         position: absolute;
         width: 100%;
@@ -31,6 +28,9 @@
     }
     main{
         .heroFC{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(25, 188, 252, 0.5)), url("../img/FutbolPage/fondoFC.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -45,13 +45,18 @@
                 font-size: 1.1em;
             }
         }
+        .noticiasFc{
+            background-color: $black;
+            color: $white;
+        }
     }
     footer{
-        position: absolute;
+        position: sticky;
         bottom: 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        background-color: $black;
 
         .footerDerechos{
             font-size: 0.75em;
@@ -64,6 +69,10 @@
                 height: auto;
                 filter: invert(89%) sepia(21%) saturate(0%) hue-rotate(161deg) brightness(101%) contrast(89%);
                 margin: 5px 15px 5px 0;
+                transition: all 0.4s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
     }
