@@ -2,6 +2,7 @@
 
 .bodyFC{
     font-family: 'Raleway', sans-serif;
+    background-color: $black;
     header{
         position: absolute;
         width: 100%;
@@ -48,6 +49,38 @@
         .noticiasFc{
             background-color: $black;
             color: $white;
+            .noticiasTitle{
+                font-family: 'League Gothic', sans-serif;
+                font-size: 4.5em;
+                padding: 25px 30px;
+            }
+            article{
+                margin: 25px 30px 80px 30px;
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+                border-radius: 30px;
+                padding: 25px;
+                .articleTitle{
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    margin: 10px 0;
+                }
+                .articleSubtitle, .articleDate{
+                    font-style: italic;
+                    font-size: 0.75em;
+                }
+                img{
+                    width: 400px;
+                    height: auto;
+                    margin: 15px 0 0 0;
+                }
+                .imgDetails{
+                    font-style: italic;
+                    font-size: 0.75em;
+                }
+                .articleText{
+                    margin: 15px 0;
+                }
+            }
         }
     }
     footer{
@@ -56,6 +89,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background-color: $black;
 
         .footerDerechos{

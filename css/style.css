@@ -217,7 +217,8 @@
 
 /* -------------------------------------- STYLES FOOTBALL CLUB PAGE -------------------------------------- */
 .bodyFC {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  background-color: #222222; }
   .bodyFC header {
     position: absolute;
     width: 100%;
@@ -255,12 +256,38 @@
   .bodyFC main .noticiasFc {
     background-color: #222222;
     color: #e2e2e2; }
+    .bodyFC main .noticiasFc .noticiasTitle {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 4.5em;
+      padding: 25px 30px; }
+    .bodyFC main .noticiasFc article {
+      margin: 25px 30px 80px 30px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      border-radius: 30px;
+      padding: 25px; }
+      .bodyFC main .noticiasFc article .articleTitle {
+        font-size: 1.5em;
+        font-weight: 500;
+        margin: 10px 0; }
+      .bodyFC main .noticiasFc article .articleSubtitle, .bodyFC main .noticiasFc article .articleDate {
+        font-style: italic;
+        font-size: 0.75em; }
+      .bodyFC main .noticiasFc article img {
+        width: 400px;
+        height: auto;
+        margin: 15px 0 0 0; }
+      .bodyFC main .noticiasFc article .imgDetails {
+        font-style: italic;
+        font-size: 0.75em; }
+      .bodyFC main .noticiasFc article .articleText {
+        margin: 15px 0; }
   .bodyFC footer {
     position: sticky;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #222222; }
     .bodyFC footer .footerDerechos {
       font-size: 0.75em;
