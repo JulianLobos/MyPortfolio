@@ -53,6 +53,7 @@
                 font-family: 'League Gothic', sans-serif;
                 font-size: 4.5em;
                 padding: 25px 30px;
+                border-bottom: 1px solid #ccc;
             }
             article{
                 margin: 25px 30px 80px 30px;
@@ -79,6 +80,112 @@
                 }
                 .articleText{
                     margin: 15px 0;
+                }
+            }
+        }
+        .resultadosFc{
+            color: $white;
+            .resultadosTitle{
+                font-family: 'League Gothic', sans-serif;
+                font-size: 4.5em;
+                padding: 25px 30px;
+                text-align: center;
+                border-bottom: 1px solid #ccc;
+            }
+            .resultadosTable{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 25px 0 80px 0;
+                label{
+                    font-weight: 600;
+                    font-size: 1.25em;
+                }
+                select{
+                    width: 30%;
+                    height: 40px;
+                    border: none;
+                    background-color: $black;
+                    color: $white;
+                    margin: 5px 0 15px 0;
+                    transition: all 0.6s ease;
+                    &:hover{
+                        background-color: rgb(15, 15, 15);
+                    }
+                    option{
+                        font-weight: 600;
+                        font-family: 'Raleway', sans-serif;
+
+                    }
+                }
+
+                table, th, td{
+                    border: 1px solid $white;
+                    border-collapse: collapse;
+                }
+                table{
+                    width: 60%;
+                    text-align: center;
+                    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+                    tr{
+                        height: 40px;
+                        &:hover{
+                            background-color: rgb(61, 177, 223);
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fixtureFc{
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            .fixtureTitle{
+                width: 100%;
+                align-self: flex-end;
+                font-family: 'League Gothic', sans-serif;
+                font-size: 4.5em;
+                padding: 25px 30px;
+                text-align: end;
+                border-bottom: 1px solid #ccc;
+            }
+            img{
+                align-self: center;
+                width: 150px;
+                margin: 15px 0;
+                -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+                filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+            }
+            .torneo{
+                align-self: center;
+                font-family: 'League Gothic', sans-serif;
+                font-size: 3em;
+                text-transform: uppercase;
+            }
+            .fixtureSubtitle{
+                font-size: 1.25em;
+                font-weight: 600;
+                align-self: center;
+            }
+
+            section{
+                margin: 50px;
+                .nextCard{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 0.5fr 1fr;
+                    text-align: center;
+                    padding: 20px;
+                    margin: 10px 0 80px 0;
+                    border-radius: 30px;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    
+                    }
                 }
             }
         }
