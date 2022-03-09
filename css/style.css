@@ -365,6 +365,22 @@
         transition: all 0.3s ease; }
         .bodyFC main .fixtureFc section .nextCard:hover {
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+  .bodyFC main .galeriaFc {
+    color: #e2e2e2; }
+    .bodyFC main .galeriaFc .galeriaTitle {
+      width: 100%;
+      font-family: 'League Gothic', sans-serif;
+      font-size: 4.5em;
+      padding: 25px 30px;
+      text-align: start;
+      border-bottom: 1px solid #ccc; }
+    .bodyFC main .galeriaFc .photo-gallery {
+      color: #e2e2e2;
+      background-color: #222222; }
+      .bodyFC main .galeriaFc .photo-gallery .photos {
+        padding-bottom: 20px; }
+      .bodyFC main .galeriaFc .photo-gallery .item {
+        padding-bottom: 30px; }
   .bodyFC footer {
     position: sticky;
     bottom: 0;

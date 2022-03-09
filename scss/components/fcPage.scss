@@ -189,6 +189,29 @@
                 }
             }
         }
+
+        .galeriaFc{
+            color: $white;
+            .galeriaTitle{
+                width: 100%;
+                font-family: 'League Gothic', sans-serif;
+                font-size: 4.5em;
+                padding: 25px 30px;
+                text-align: start;
+                border-bottom: 1px solid #ccc;
+            }
+            .photo-gallery{
+                color: $white;
+                background-color: $black;
+                .photos{
+                    padding-bottom:20px;
+                }
+                .item{
+                    padding-bottom:30px;
+                }
+
+            }
+        }
     }
     footer{
         position: sticky;
