@@ -49,6 +49,13 @@
         .noticiasFc{
             background-color: $black;
             color: $white;
+            font-family: 'Oswald', sans-serif;
+            section{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
             .newsCard{
                 background-image: linear-gradient(180deg, rgba(255,255,255,0) 100%, rgba(0,0,0,1) 100%), url("../img/FutbolPage/fondoFC.jpg");
                 background-repeat: no-repeat;
@@ -64,6 +71,8 @@
                 justify-content: flex-end;
                 align-items: center;
                 transition: all 0.5s ease;
+                -webkit-transition: all 0.5s ease;
+                
                 &:hover{
                     background-image: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%), url("../img/FutbolPage/fondoFC.jpg");
                     background-size: 200%;
@@ -82,33 +91,6 @@
                 font-size: 4.5em;
                 padding: 25px 30px;
                 border-bottom: 1px solid #ccc;
-            }
-            article{
-                margin: 25px 30px 80px 30px;
-                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-                border-radius: 30px;
-                padding: 25px;
-                .articleTitle{
-                    font-size: 1.5em;
-                    font-weight: 500;
-                    margin: 10px 0;
-                }
-                .articleSubtitle, .articleDate{
-                    font-style: italic;
-                    font-size: 0.75em;
-                }
-                img{
-                    width: 400px;
-                    height: auto;
-                    margin: 15px 0 0 0;
-                }
-                .imgDetails{
-                    font-style: italic;
-                    font-size: 0.75em;
-                }
-                .articleText{
-                    margin: 15px 0;
-                }
             }
         }
         .resultadosFc{
@@ -186,6 +168,11 @@
                 margin: 15px 0;
                 -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
                 filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+                transition: all 1s ease;
+                -webkit-transition: all 2s ease;
+                &:hover{
+                    transform: scale(1.15);
+                }
             }
             .torneo{
                 align-self: center;
