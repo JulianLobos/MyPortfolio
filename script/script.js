@@ -11,3 +11,9 @@ $("#hamburgerSup").click(function() {
   $(this).toggleClass("on");
   $("#menuSup").slideToggle();
 });
+
+// hamburger button football club page
+$("#hamburgerFc").click(function() {
+  $(this).toggleClass("on");
+  $("#menuFc").slideToggle();
+});

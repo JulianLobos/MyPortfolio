@@ -225,6 +225,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .bodyFC header .hamburgerFc {
+      width: 28px;
+      height: 30px;
+      margin: 10px 15px;
+      display: none; }
+      .bodyFC header .hamburgerFc div {
+        width: 100%;
+        height: 5px;
+        background: #e2e2e2;
+        margin: 4px auto;
+        transition: all 0.3s;
+        backface-visibility: hidden; }
     .bodyFC header img {
       width: 80px;
       height: auto;
@@ -555,4 +567,44 @@
       .bodySignUp .signUpPage .welcomePage .welcomeTitle {
         margin: 0 30px 10px 30px; }
       .bodySignUp .signUpPage .welcomePage .welcomeMessage {
-        margin: 0 30px; } }
+        margin: 0 30px; }
+  /* Football Club page */
+  .bodyFC header {
+    position: fixed;
+    height: 90px;
+    background-image: linear-gradient(black, rgba(255, 255, 255, 0));
+    justify-content: space-between;
+    padding-top: 10px; }
+    .bodyFC header img {
+      height: 85px;
+      width: auto; }
+    .bodyFC header .menuList {
+      display: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #0f7fac;
+      margin: 0;
+      padding: 30% 0 0 0; }
+      .bodyFC header .menuList .listItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.5em; }
+        .bodyFC header .menuList .listItem:hover {
+          background-color: #e2e2e2; }
+          .bodyFC header .menuList .listItem:hover a {
+            color: #222222; }
+    .bodyFC header .hamburgerFc {
+      display: inline-block;
+      z-index: 1; }
+    .bodyFC header #hamburgerFc.on .one {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .bodyFC header #hamburgerFc.on .two {
+      opacity: 0; }
+    .bodyFC header #hamburgerFc.on .three {
+      transform: rotate(-45deg) translate(7px, -8px); } }
