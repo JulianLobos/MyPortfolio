@@ -256,6 +256,30 @@
   .bodyFC main .noticiasFc {
     background-color: #222222;
     color: #e2e2e2; }
+    .bodyFC main .noticiasFc .newsCard {
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 100%, black 100%), url("../img/FutbolPage/fondoFC.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      cursor: pointer;
+      width: 250px;
+      height: 300px;
+      margin: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      transition: all 0.5s ease; }
+      .bodyFC main .noticiasFc .newsCard:hover {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, black 100%), url("../img/FutbolPage/fondoFC.jpg");
+        background-size: 200%; }
+      .bodyFC main .noticiasFc .newsCard .cardTitle {
+        font-weight: 600;
+        font-size: 1.25em;
+        text-align: center; }
+      .bodyFC main .noticiasFc .newsCard .cardSubtitle {
+        text-align: center; }
     .bodyFC main .noticiasFc .noticiasTitle {
       font-family: 'League Gothic', sans-serif;
       font-size: 4.5em;
