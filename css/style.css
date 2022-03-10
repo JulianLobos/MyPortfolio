@@ -352,7 +352,7 @@
       font-weight: 600;
       align-self: center; }
     .bodyFC main .fixtureFc section {
-      margin: 50px; }
+      margin: 80px; }
       .bodyFC main .fixtureFc section .nextCard {
         display: grid;
         grid-template-columns: 1fr 1fr 0.5fr 1fr;
@@ -381,6 +381,36 @@
         padding-bottom: 20px; }
       .bodyFC main .galeriaFc .photo-gallery .item {
         padding-bottom: 30px; }
+  .bodyFC main .elClub {
+    color: #e2e2e2; }
+    .bodyFC main .elClub .clubTitle {
+      width: 100%;
+      font-family: 'League Gothic', sans-serif;
+      font-size: 4.5em;
+      padding: 25px 30px;
+      text-align: center;
+      border-bottom: 1px solid #ccc; }
+    .bodyFC main .elClub .clubText {
+      margin: 60px;
+      padding: 25px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-left: 10px solid black;
+      background-color: rgba(255, 255, 255, 0.164); }
+  .bodyFC .upArrow {
+    background-color: rgba(255, 255, 255, 0.363);
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    right: 40px;
+    bottom: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center; }
+    .bodyFC .upArrow img {
+      padding: 5px;
+      width: 40px;
+      height: auto; }
   .bodyFC footer {
     position: sticky;
     bottom: 0;
