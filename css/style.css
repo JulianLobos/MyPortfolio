@@ -262,7 +262,7 @@
     color: #e2e2e2; }
     .bodyFC main .heroFC .heroTitle {
       font-family: 'League Gothic', sans-serif;
-      font-size: 5.5em; }
+      font-size: 4.75em; }
     .bodyFC main .heroFC .heroSubtitle {
       font-size: 1.1em; }
   .bodyFC main .noticiasFc {
@@ -365,7 +365,8 @@
       -webkit-filter: drop-shadow(5px 5px 5px black);
       filter: drop-shadow(5px 5px 5px black);
       transition: all 1s ease;
-      -webkit-transition: all 2s ease; }
+      -webkit-transition: all 2s ease;
+      z-index: -1; }
       .bodyFC main .fixtureFc img:hover {
         transform: scale(1.15); }
     .bodyFC main .fixtureFc .torneo {
@@ -470,7 +471,14 @@
   .bodySignUp .signUpPage .formPage .signInMessage {
     margin: 0 15px 0 50px; }
   .bodySignUp .signUpPage .welcomePage .welcomeMessage {
-    margin: 10px 50px; } }
+    margin: 10px 50px; }
+  .bodyFC header .menuList .listItem {
+    font-size: 0.85em; }
+  .bodyFC main .heroFC .heroTitle {
+    font-size: 2.5em;
+    text-align: center; }
+  .bodyFC main .heroFC .heroSubtitle {
+    font-size: 1em; } }
 
 @media (max-width: 576px) {
   /* index */
@@ -607,4 +615,50 @@
     .bodyFC header #hamburgerFc.on .two {
       opacity: 0; }
     .bodyFC header #hamburgerFc.on .three {
-      transform: rotate(-45deg) translate(7px, -8px); } }
+      transform: rotate(-45deg) translate(7px, -8px); }
+  .bodyFC main .heroFC .heroTitle {
+    font-size: 2em;
+    text-align: center; }
+  .bodyFC main .heroFC .heroSubtitle {
+    font-size: 1em; }
+  .bodyFC main .noticiasFc {
+    text-align: center; }
+    .bodyFC main .noticiasFc .noticiasTitle {
+      font-size: 3.5em; }
+    .bodyFC main .noticiasFc section .newsCard {
+      height: 200px; }
+  .bodyFC main .resultadosFc .resultadosTitle {
+    font-size: 3.5em; }
+  .bodyFC main .resultadosFc .resultadosTable label {
+    font-size: 1em; }
+  .bodyFC main .resultadosFc .resultadosTable table {
+    font-size: 0.75em;
+    width: 90%; }
+    .bodyFC main .resultadosFc .resultadosTable table tr th {
+      min-width: 25px; }
+  .bodyFC main .fixtureFc .fixtureTitle {
+    font-size: 3.5em;
+    text-align: center; }
+  .bodyFC main .fixtureFc img {
+    width: 80px; }
+  .bodyFC main .fixtureFc .torneo {
+    font-size: 3em; }
+  .bodyFC main .fixtureFc section {
+    margin: 15px;
+    font-size: 0.75em; }
+    .bodyFC main .fixtureFc section .nextCard {
+      margin: 10px 0 60px 0; }
+  .bodyFC main .galeriaFc .galeriaTitle {
+    font-size: 3.5em;
+    text-align: center; }
+  .bodyFC main .galeriaFc .photo-gallery .container .row .item {
+    position: unset; }
+  .bodyFC .upArrow {
+    right: 15px;
+    bottom: 15px; }
+  .bodyFC footer {
+    position: static; }
+    .bodyFC footer .footerDerechos {
+      font-size: 0.5em; }
+    .bodyFC footer .footerRedes img {
+      width: 15px; } }
