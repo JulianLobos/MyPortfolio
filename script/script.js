@@ -103,6 +103,9 @@ if (mq.matches) {
   $("#menuFc").show();
 }
 
+
+// script table
+
 $(document).ready(function(){
   $("select").change(function(){
       $(this).find("option:selected").each(function(){
@@ -116,3 +119,16 @@ $(document).ready(function(){
       });
   }).change();
 }); 
+
+// script toggle
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// script goles
+
+$("#partidoFecha1").click(function() {
+  $(this).toggleClass("on");
+  $("#goles").slideToggle();
+});

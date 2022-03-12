@@ -346,9 +346,18 @@
           .bodyFC main .resultadosFc .resultadosTable table tr:hover {
             background-color: #3db1df;
             color: #222222; }
+            .bodyFC main .resultadosFc .resultadosTable table tr:hover img {
+              filter: invert(10%) sepia(10%) saturate(19%) hue-rotate(41deg) brightness(98%) contrast(91%); }
           .bodyFC main .resultadosFc .resultadosTable table tr .tableHeading {
             text-transform: uppercase;
             font-size: 1.15em; }
+          .bodyFC main .resultadosFc .resultadosTable table tr td {
+            cursor: pointer; }
+            .bodyFC main .resultadosFc .resultadosTable table tr td span {
+              display: none; }
+              .bodyFC main .resultadosFc .resultadosTable table tr td span img {
+                width: 15px;
+                filter: invert(100%) sepia(0%) saturate(1672%) hue-rotate(268deg) brightness(88%) contrast(99%); }
   .bodyFC main .fixtureFc {
     color: #e2e2e2;
     display: flex;
