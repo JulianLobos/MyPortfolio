@@ -485,6 +485,7 @@
 
 /* ******************** Travel CBA styles *********************** */
 .bodyTravel {
+  background-color: #e2e2e2;
   font-family: 'Montserrat', sans-serif; }
   .bodyTravel main {
     height: 100vh;
@@ -511,6 +512,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         margin: 25px 10px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -526,20 +528,21 @@
           font-weight: 600;
           text-transform: uppercase;
           transform: rotate(-90deg);
-          transition: all 0.7s ease; }
+          transition: all 0.5s ease; }
         .bodyTravel main .cbaCards .card .cardText {
-          display: none;
           font-size: 0.75em;
           margin: 10px 20px 20px 20px;
-          transition: all 0.5s ease;
-          transition-delay: 0.5s; }
+          height: 0;
+          opacity: 0; }
         .bodyTravel main .cbaCards .card:hover {
           width: 350px; }
           .bodyTravel main .cbaCards .card:hover .cardTitle {
-            margin-bottom: 10px;
             transform: unset; }
           .bodyTravel main .cbaCards .card:hover .cardText {
-            display: block; }
+            height: auto;
+            opacity: 1;
+            transition: all 1s ease 0s;
+            transition-delay: 0.5s; }
 
 /* ---------------------------- Media queries ---------------------------- */
 @media (max-width: 768px) {
