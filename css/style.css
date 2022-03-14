@@ -570,7 +570,7 @@
           .bodyTravel main .cbaCards .card:hover .cardTitle {
             transform: unset; }
           .bodyTravel main .cbaCards .card:hover .cardText {
-            bottom: 180px;
+            bottom: 150px;
             opacity: 1;
             z-index: 0;
             transition: all 0.5s ease 0s;
