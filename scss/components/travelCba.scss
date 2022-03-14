@@ -1,0 +1,72 @@
+/* ******************** Travel CBA styles *********************** */
+
+.bodyTravel{
+    font-family: 'Montserrat', sans-serif;
+    main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cbaTitle{
+            font-size: 2em;
+        }
+        .cbaCards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cc{
+                background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba.jpg");
+            }
+            .vcp{
+                background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba4.webp");
+            }
+            .mc{
+                background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba3.jpg");
+            }
+            .lc{
+                background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba2.jpg");
+            }
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 25px 10px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+                color: $white;
+                width: 80px;
+                height: 350px;
+                border-radius: 30px;
+                transition: all 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                .cardTitle{
+                    text-align: center;
+                    width: 350px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    transform: rotate(-90deg);
+                    transition: all 0.7s ease;
+                }
+                .cardText{
+                    display: none;
+                    font-size: 0.75em;
+                    margin: 10px 20px 20px 20px;
+                    transition: all 0.5s ease;
+                    transition-delay: 0.5s;
+                }
+                &:hover{
+                    width: 350px;
+                    .cardTitle{
+                        margin-bottom: 10px;
+                        transform: unset;
+                    }
+                    .cardText{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

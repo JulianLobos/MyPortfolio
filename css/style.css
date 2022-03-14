@@ -483,6 +483,64 @@
       .bodyFC footer .footerRedes img:hover {
         transform: scale(1.1); }
 
+/* ******************** Travel CBA styles *********************** */
+.bodyTravel {
+  font-family: 'Montserrat', sans-serif; }
+  .bodyTravel main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .bodyTravel main cbaTitle {
+      font-size: 2em; }
+    .bodyTravel main .cbaCards {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .bodyTravel main .cbaCards .cc {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba.jpg"); }
+      .bodyTravel main .cbaCards .vcp {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba4.webp"); }
+      .bodyTravel main .cbaCards .mc {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba3.jpg"); }
+      .bodyTravel main .cbaCards .lc {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba2.jpg"); }
+      .bodyTravel main .cbaCards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        color: #e2e2e2;
+        width: 80px;
+        height: 350px;
+        border-radius: 30px;
+        transition: all 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+        .bodyTravel main .cbaCards .card .cardTitle {
+          text-align: center;
+          width: 350px;
+          font-weight: 600;
+          text-transform: uppercase;
+          transform: rotate(-90deg);
+          transition: all 0.7s ease; }
+        .bodyTravel main .cbaCards .card .cardText {
+          display: none;
+          font-size: 0.75em;
+          margin: 10px 20px 20px 20px;
+          transition: all 0.5s ease;
+          transition-delay: 0.5s; }
+        .bodyTravel main .cbaCards .card:hover {
+          width: 350px; }
+          .bodyTravel main .cbaCards .card:hover .cardTitle {
+            margin-bottom: 10px;
+            transform: unset; }
+          .bodyTravel main .cbaCards .card:hover .cardText {
+            display: block; }
+
 /* ---------------------------- Media queries ---------------------------- */
 @media (max-width: 768px) {
   /* Sign Up page */
