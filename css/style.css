@@ -485,10 +485,13 @@
 
 /* ******************** Travel CBA styles *********************** */
 .bodyTravel {
-  background-color: #e2e2e2;
+  background-color: #dfdddd;
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .bodyTravel header img {
     width: 40px;
     position: absolute;
@@ -504,7 +507,7 @@
     justify-content: center;
     align-items: center; }
     .bodyTravel main .subtitle {
-      margin: 10px; }
+      margin-bottom: 10px; }
     .bodyTravel main .titles {
       margin: 50px 0 25px 0;
       border-bottom: 1px #aaa solid;
@@ -548,6 +551,7 @@
         width: 80px;
         height: 350px;
         border-radius: 15px;
+        box-shadow: #13161a 0px 20px 30px -10px;
         transition: all 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
         .bodyTravel main .cbaCards .card .cardTitle {
           text-align: center;
