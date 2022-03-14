@@ -45,6 +45,31 @@
             }
         }
     }
+    /* travel cba */ 
+    .bodyTravel{
+        overflow: auto;
+        main{
+            .cbaCards{
+                flex-direction: column;
+                .card{
+                    height: 60px;
+                    width: 350px;
+                    margin: 0 0 25px 0;
+                    .cardTitle{
+                        transform: unset;
+                        line-height: 60px;
+                        margin: 0;
+                    }
+                    .cardText{
+                        position: unset;
+                    }
+                    &:hover{
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -329,6 +354,31 @@
             .footerRedes{
                 img{
                     width: 15px;
+                }
+            }
+        }
+    }
+    /* travel cba */ 
+    .bodyTravel{
+        main{
+            .cbaCards{
+                .card{
+                    font-size: 0.75em;
+                    height: 60px;
+                    width: 250px;
+                    margin: 0 0 25px 0;
+                    .cardText{
+                        padding: 0px;
+                    }
+                    &:hover{
+                        height: 250px;
+                        width: 250px;
+                        .cardText{
+                            padding: 0 50px;
+                            transition-delay: 0.75s;
+                        }
+                    }
+                    
                 }
             }
         }

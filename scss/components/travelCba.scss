@@ -3,30 +3,65 @@
 .bodyTravel{
     background-color: $white;
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    header{
+        img{
+            width: 40px;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            filter: invert(80%) sepia(5%) saturate(0%) hue-rotate(150deg) brightness(85%) contrast(91%);
+            transition: all 0.8s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
     main{
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        cbaTitle{
-            font-size: 2em;
+        .subtitle{
+            margin: 10px;
+        }
+        .titles{
+            margin: 50px 0 25px 0;
+            border-bottom: 1px #aaa solid;
+            width: 90vw;
+            text-align: center;
+        }
+        .cbaTitle{
+            font-size: 3em;
+            font-weight: 900;
+            display: inline-block;
+            z-index: 2;
+        }
+        .argTitle{
+            font-size: 3em;
+            font-weight: 200;
+            display: inline-block;
+            z-index: 2;
         }
         .cbaCards{
             display: flex;
             justify-content: center;
             align-items: center;
             .cc{
-                background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba.jpg");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)), url("../img/TravelCba/cba.jpg");
             }
             .vcp{
-                background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba4.webp");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)), url("../img/TravelCba/cba4.webp");
             }
             .mc{
-                background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba3.jpg");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)), url("../img/TravelCba/cba3.jpg");
             }
             .lc{
-                background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/TravelCba/cba2.jpg");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)), url("../img/TravelCba/cba2.jpg");
+            }
+            .jm {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)), url("../img/TravelCba/cba5.jpg");
             }
             .card{
                 display: flex;
@@ -34,28 +69,32 @@
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
-                margin: 25px 10px;
+                margin: 25px 10px 50px 10px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 object-fit: cover;
                 color: $white;
                 width: 80px;
                 height: 350px;
-                border-radius: 30px;
+                border-radius: 15px;
                 transition: all 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
                 .cardTitle{
                     text-align: center;
+                    margin: 0 0 15px 0;
                     width: 350px;
                     font-weight: 600;
                     text-transform: uppercase;
                     transform: rotate(-90deg);
-                    transition: all 0.5s ease;
+                    transition: all 0.5s linear;
                 }
                 .cardText{
-                    font-size: 0.75em;
-                    margin: 10px 20px 20px 20px;
-                    height: 0;
+                    position: absolute;
                     opacity: 0;
+                    bottom: -100%;
+                    width: 330px;
+                    font-size: 0.75em;
+                    overflow: hidden;
+                    z-index: -1;
                     
                 }
                 &:hover{
@@ -64,12 +103,35 @@
                         transform: unset;
                     }
                     .cardText{
-                        height: auto;
+                        bottom: 180px;
                         opacity: 1;
-                        transition: all 1s ease 0s;
+                        z-index: 0;
+                        transition: all 0.5s ease 0s;
                         transition-delay: 0.5s;
                     }
                 }
+            }
+        }
+    }
+    footer{
+        .legales{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.75em;
+            a{
+                color: #aaa;
+                margin: 0 0 0 7px;
+                display: flex;
+                align-items: center;
+                
+            }
+            img{
+                width: 14px;
+                filter: invert(80%) sepia(5%) saturate(0%) hue-rotate(150deg) brightness(85%) contrast(91%);
             }
         }
     }
