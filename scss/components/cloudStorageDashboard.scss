@@ -1,0 +1,113 @@
+/* -------------------------------------- STYLES CLOUD STORAGE DASHBOARD -------------------------------------- */
+.bodyCloud{
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 2px;
+    background-color: $cloudColor;
+    display: grid;
+    grid-template-columns: 5% 27% 27% 27% 7% 7%;
+    grid-template-areas: 'nav header header header aside aside'
+                        'nav main main main aside aside'
+                        'nav main main main aside aside'
+                        'nav main main main aside aside'
+                        'nav main main main aside aside';
+    height: 100vh;
+    header{
+        background-color: $cloudColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 30px;
+        border: 1px solid #ccc;
+        grid-area: header;
+        box-shadow:  $cloudShadow;
+        z-index: 1;
+
+    }
+    .navbar{
+        background-color: $cloudColor;
+        box-shadow:  $cloudShadow;
+        border: 1px solid #ccc;
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        .logo{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            li{
+                padding: 20px;
+                margin: 10px;
+                img{
+                    width: 20px;
+                }
+            }
+        }
+    }
+    main{
+        background-color: $cloudColor;
+        border: 1px solid #ccc;
+        grid-area: main;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 30px;
+        box-shadow:  $cloudShadow;
+        z-index: 1;
+        .title{
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            height: 25px;
+            margin: 15px 0;
+        }
+        .cardCounter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 150px;
+                border-radius: 30px;
+                box-shadow: $cloudShadow;
+                margin: 10px 20px;
+                cursor: pointer;
+                transition: all 0.4s ease;
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: 5px 5px 30px #c0c2c5, -5px -5px 30px #ffffff;;
+                }
+                img{
+                    width: 35px;
+                    height: 35px;
+                    margin: 10px;
+                    filter: invert(51%) sepia(27%) saturate(267%) hue-rotate(165deg) brightness(89%) contrast(84%);
+                }
+            }
+        }
+    }
+    aside{
+        background-color: $cloudColor;
+        border: 1px solid #ccc;
+        grid-area: aside;
+        padding: 15px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow:  $cloudShadow;
+    }
+}
