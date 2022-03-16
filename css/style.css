@@ -602,7 +602,7 @@
   letter-spacing: 2px;
   background-color: #eff2f9;
   display: grid;
-  grid-template-columns: 5% 27% 27% 27% 7% 7%;
+  grid-template-columns: 70px 26% 26% 26% 8% auto;
   grid-template-areas: 'nav header header header aside aside' 'nav main main main aside aside' 'nav main main main aside aside' 'nav main main main aside aside' 'nav main main main aside aside';
   height: 100vh; }
   .bodyCloud header {
@@ -613,14 +613,12 @@
     margin: 15px;
     padding: 15px;
     border-radius: 30px;
-    border: 1px solid #ccc;
     grid-area: header;
-    box-shadow: 5px 5px 30px #dcdfe5, -5px -5px 30px #ffffff;
+    box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff;
     z-index: 1; }
   .bodyCloud .navbar {
     background-color: #eff2f9;
-    box-shadow: 5px 5px 30px #dcdfe5, -5px -5px 30px #ffffff;
-    border: 1px solid #ccc;
+    box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff;
     grid-area: nav;
     display: flex;
     flex-direction: column;
@@ -640,18 +638,20 @@
       align-items: center;
       list-style: none; }
       .bodyCloud .navbar ul li {
-        padding: 20px;
-        margin: 10px; }
+        padding: 23px; }
         .bodyCloud .navbar ul li img {
           width: 20px; }
+      .bodyCloud .navbar ul .navHome {
+        background-color: #e4ebf1;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px; }
   .bodyCloud main {
     background-color: #eff2f9;
-    border: 1px solid #ccc;
     grid-area: main;
     margin: 15px;
     padding: 15px;
     border-radius: 30px;
-    box-shadow: 5px 5px 30px #dcdfe5, -5px -5px 30px #ffffff;
+    box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff;
     z-index: 1; }
     .bodyCloud main .title {
       text-align: center;
@@ -670,7 +670,7 @@
         width: 150px;
         height: 150px;
         border-radius: 30px;
-        box-shadow: 5px 5px 30px #dcdfe5, -5px -5px 30px #ffffff;
+        box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff;
         margin: 10px 20px;
         cursor: pointer;
         transition: all 0.4s ease; }
@@ -684,12 +684,11 @@
           filter: invert(51%) sepia(27%) saturate(267%) hue-rotate(165deg) brightness(89%) contrast(84%); }
   .bodyCloud aside {
     background-color: #eff2f9;
-    border: 1px solid #ccc;
     grid-area: aside;
     padding: 15px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    box-shadow: 5px 5px 30px #dcdfe5, -5px -5px 30px #ffffff; }
+    box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff; }
 
 /* ---------------------------- Media queries ---------------------------- */
 @media (max-width: 768px) {
