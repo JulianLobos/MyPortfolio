@@ -56,6 +56,24 @@
         height: 100vh;
         border-bottom-right-radius: 30px;
         border-top-right-radius: 30px;
+        .navSections{
+            .hamburgerMenu{
+                width: 28px;
+                height: 30px;
+                margin: 10px 15px;
+                display: none;
+                cursor: pointer;
+                div{
+                    width: 100%;
+                    height: 5px;
+                    background: $cloudColor4;
+                    border-radius: 20px;
+                    margin: 4px auto;
+                    transition: all 0.3s;
+                    backface-visibility: hidden;
+                }
+            }
+        }
         .logo{
             position: absolute;
             top: 10px;
@@ -86,6 +104,24 @@
                 border-bottom-right-radius: 30px;
             }
         }
+        .navMenuPhone{
+            display: none;
+            background-color: $cloudColor;
+            position: absolute;
+            bottom: 59px;
+            left: 80%;
+            right: 0;
+            border: 1px solid $cloudColor4;
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+            }
+        }
     }
     main{
         display: flex;
@@ -106,7 +142,7 @@
         }
         .cardCounter{
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             div{
                 display: flex;

@@ -55,6 +55,9 @@
             .menuItem{
                 display: inline-block;
                 padding-right: 15px;
+                a{
+                    color: $black;
+                }
             }
         }
     }

@@ -141,6 +141,8 @@
       .bodySignUp header .menuList .menuItem {
         display: inline-block;
         padding-right: 15px; }
+        .bodySignUp header .menuList .menuItem a {
+          color: #222222; }
   .bodySignUp .signUpPage {
     width: 100%;
     height: 100vh;
@@ -318,6 +320,10 @@
       justify-content: center;
       align-items: center;
       margin: 25px 0 80px 0; }
+      .bodyFC main .resultadosFc .resultadosTable .referencias {
+        margin-top: 25px;
+        text-align: center;
+        font-style: italic; }
       .bodyFC main .resultadosFc .resultadosTable label {
         font-weight: 600;
         font-size: 1.25em; }
@@ -645,6 +651,20 @@
     height: 100vh;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px; }
+    .bodyCloud .navbar .navSections .hamburgerMenu {
+      width: 28px;
+      height: 30px;
+      margin: 10px 15px;
+      display: none;
+      cursor: pointer; }
+      .bodyCloud .navbar .navSections .hamburgerMenu div {
+        width: 100%;
+        height: 5px;
+        background: #6e7f8d;
+        border-radius: 20px;
+        margin: 4px auto;
+        transition: all 0.3s;
+        backface-visibility: hidden; }
     .bodyCloud .navbar .logo {
       position: absolute;
       top: 10px;
@@ -669,6 +689,21 @@
         background-color: #e4ebf1;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px; }
+    .bodyCloud .navbar .navMenuPhone {
+      display: none;
+      background-color: #eff2f9;
+      position: absolute;
+      bottom: 59px;
+      left: 80%;
+      right: 0;
+      border: 1px solid #6e7f8d; }
+      .bodyCloud .navbar .navMenuPhone li {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .bodyCloud .navbar .navMenuPhone li:hover {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0; }
   .bodyCloud main {
     display: flex;
     flex-direction: column;
@@ -687,7 +722,7 @@
       margin: 15px 0; }
     .bodyCloud main .cardCounter {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center; }
       .bodyCloud main .cardCounter div {
         display: flex;
@@ -787,6 +822,22 @@
         transition: all 0.4s ease-out; }
 
 /* ---------------------------- Media queries ---------------------------- */
+@media (max-width: 945px) {
+  /* Cloud storage dashboard page */
+  .bodyCloud {
+    grid-template-columns: 70px auto auto auto;
+    grid-template-areas: 'nav header header header' 'nav main main main' 'nav main main main' 'nav main main main' 'nav main main main'; }
+    .bodyCloud .navbar {
+      height: 100%; }
+    .bodyCloud main .cardCounter {
+      flex-wrap: wrap; }
+    .bodyCloud main .terms {
+      font-size: 0.75em; }
+    .bodyCloud main .usageOptions ul li {
+      margin: 10px 0; }
+    .bodyCloud aside {
+      display: none; } }
+
 @media (max-width: 768px) {
   /* Sign Up page */
   .bodySignUp .signUpPage .formPage .formSignUp {
@@ -898,7 +949,7 @@
       .bodySignUp .signUpPage .formPage .formSignUp {
         margin: 0 0 15px 0; }
       .bodySignUp .signUpPage .formPage .formMessage {
-        margin: 0 0 15px 0; }
+        margin: 0 15px 15px 15px; }
       .bodySignUp .signUpPage .formPage form {
         margin: 0 0 15px 0;
         display: flex;
@@ -1017,4 +1068,83 @@
       width: 250px; }
       .bodyTravel main .cbaCards .card:hover .cardText {
         padding: 0 50px;
-        transition-delay: 0.75s; } }
+        transition-delay: 0.75s; }
+  /* Cloud storage dashboard page */
+  .bodyCloud {
+    font-size: 0.85em;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 'header header header' 'main main main' 'main main main' 'main main main' 'main main main'; }
+    .bodyCloud .navbar {
+      all: unset;
+      background-color: #eff2f9;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid #6e7f8d; }
+      .bodyCloud .navbar .navSections {
+        flex-direction: row;
+        display: flex;
+        align-items: center; }
+        .bodyCloud .navbar .navSections .navDocuments, .bodyCloud .navbar .navSections .navGallery, .bodyCloud .navbar .navSections .navSettings {
+          display: none; }
+        .bodyCloud .navbar .navSections li {
+          padding: 15px;
+          margin: 0 15px; }
+          .bodyCloud .navbar .navSections li:hover {
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 30px; }
+        .bodyCloud .navbar .navSections .navHome {
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 0; }
+        .bodyCloud .navbar .navSections .hamburgerMenu {
+          display: inline-block;
+          z-index: 1; }
+        .bodyCloud .navbar .navSections #hamburgerMenuCloud.on .one {
+          transform: rotate(45deg) translate(5px, 5px); }
+        .bodyCloud .navbar .navSections #hamburgerMenuCloud.on .two {
+          opacity: 0; }
+        .bodyCloud .navbar .navSections #hamburgerMenuCloud.on .three {
+          transform: rotate(-45deg) translate(7px, -8px); }
+    .bodyCloud header {
+      flex-direction: column; }
+      .bodyCloud header .getPro {
+        display: none; }
+    .bodyCloud main {
+      margin: 0;
+      padding-bottom: 100px; }
+      .bodyCloud main .cardCounter {
+        flex-wrap: wrap; }
+        .bodyCloud main .cardCounter div {
+          width: 90px;
+          height: 90px; }
+          .bodyCloud main .cardCounter div img {
+            width: 25px;
+            height: 25px; }
+          .bodyCloud main .cardCounter div p {
+            font-size: 0.75em; }
+      .bodyCloud main .terms {
+        font-size: 0.75em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .bodyCloud main .terms ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr; }
+          .bodyCloud main .terms ul li {
+            margin-bottom: 5px; }
+      .bodyCloud main .usageOptions {
+        text-align: center; }
+        .bodyCloud main .usageOptions ul {
+          margin: 0; }
+          .bodyCloud main .usageOptions ul li {
+            margin: 10px 0; }
+            .bodyCloud main .usageOptions ul li span {
+              display: none; }
+    .bodyCloud aside {
+      display: none; } }

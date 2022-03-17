@@ -1,4 +1,37 @@
 /* ---------------------------- Media queries ---------------------------- */
+@media (max-width: 945px){
+    /* Cloud storage dashboard page */
+    .bodyCloud{
+        grid-template-columns: 70px auto auto auto;
+        grid-template-areas: 'nav header header header'
+                        'nav main main main'
+                        'nav main main main'
+                        'nav main main main'
+                        'nav main main main';
+        
+        .navbar{
+            height: 100%;
+        }
+        main{
+            .cardCounter{
+                flex-wrap: wrap;
+            }
+            .terms{
+                font-size: 0.75em;
+            }
+            .usageOptions{
+                ul{
+                    li{
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+        aside{
+            display: none;
+        }
+    }
+}
 @media (max-width: 768px) {
     /* Sign Up page */ 
     .bodySignUp{
@@ -175,7 +208,7 @@
                     margin: 0 0 15px 0;
                 }
                 .formMessage{
-                    margin: 0 0 15px 0;
+                    margin: 0 15px 15px 15px;
                 }
                 form{
                     margin: 0 0 15px 0;
@@ -243,9 +276,6 @@
                         }
                         background-color: $white;
                     }
-                    
-
-
                 }
             }
             .hamburgerFc{
@@ -381,6 +411,117 @@
                     
                 }
             }
+        }
+    }
+    /* Cloud storage dashboard page */
+    .bodyCloud{
+        font-size: 0.85em;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 'header header header'
+                        'main main main'
+                        'main main main'
+                        'main main main'
+                        'main main main';
+        .navbar{
+            all: unset;
+            background-color: $cloudColor;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid $cloudColor4;
+            .navSections{
+                flex-direction: row;
+                display: flex;
+                align-items: center;
+                .navDocuments, .navGallery, .navSettings{
+                    display: none;
+                }
+                li{
+                    padding: 15px;
+                    margin: 0 15px;
+                    &:hover{
+                        border-bottom-right-radius: 0;
+                        border-top-left-radius: 30px;
+                    }
+                }
+                .navHome{
+                    border-top-left-radius: 30px;
+                    border-bottom-right-radius: 0;
+                }
+                .hamburgerMenu{
+                    display: inline-block;
+                    z-index: 1;
+                }
+                #hamburgerMenuCloud.on .one {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                  
+                #hamburgerMenuCloud.on .two {
+                opacity: 0;
+                }
+                
+                #hamburgerMenuCloud.on .three {
+                transform: rotate(-45deg) translate(7px, -8px);
+                }
+            }
+        }
+        header{
+            flex-direction: column;
+            .getPro{
+                display: none;
+            }
+        }
+        main{
+            margin: 0;
+            padding-bottom: 100px;
+            .cardCounter{
+                flex-wrap: wrap;
+                div{
+                    width: 90px;
+                    height: 90px;
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                    p{
+                        font-size: 0.75em;
+                    }
+                }
+            }
+            .terms{
+                font-size: 0.75em;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ul{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    li{
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .usageOptions{
+                text-align: center;
+                ul{
+                    margin: 0;
+                    li{
+                        margin: 10px 0;
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        aside{
+            display: none;
         }
     }
 }
