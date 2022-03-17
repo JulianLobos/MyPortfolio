@@ -1,7 +1,8 @@
 /* -------------------------------------- STYLES CLOUD STORAGE DASHBOARD -------------------------------------- */
 .bodyCloud{
     font-family: 'Rubik', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
+    color: $black;
     background-color: $cloudColor;
     display: grid;
     grid-template-columns: 70px 26% 26% 26% 8% auto;
@@ -22,7 +23,27 @@
         grid-area: header;
         box-shadow:  $cloudShadow;
         z-index: 1;
-
+        .logo{
+            font-weight: 300;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: $black;
+        }
+        .getPro{
+            color: $white;
+            background-color: rgb(129, 40, 151);
+            background: linear-gradient(90deg, rgba(154,59,231,1) 30%, rgba(255,11,245,1) 100%);
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: $cloudShadow;
+            transition: all 0.4s ease;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
     }
     .navbar{
         background-color: $cloudColor;
@@ -49,18 +70,27 @@
             li{
                 padding: 23px;
                 img{
-                    width: 20px;
+                    width: 25px;
+                    height: 25px;
+                    filter: invert(49%) sepia(11%) saturate(611%) hue-rotate(165deg) brightness(96%) contrast(89%);
+                }
+                &:hover{
+                    background-color: $cloudColor2;
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
                 }
             }
             .navHome{
                 background-color: $cloudColor2;
                 border-top-right-radius: 30px;
                 border-bottom-right-radius: 30px;
-
             }
         }
     }
     main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background-color: $cloudColor;
         grid-area: main;
         margin: 15px;
@@ -83,8 +113,8 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 150px;
-                height: 150px;
+                width: 140px;
+                height: 140px;
                 border-radius: 30px;
                 box-shadow: $cloudShadow;
                 margin: 10px 20px;
@@ -102,13 +132,108 @@
                 }
             }
         }
+        .usage{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 25px;
+            .progressBarTotal{
+                height: 15px;
+                width: 200px;
+                background-color: rgb(218, 218, 218);
+                border-radius: 20px;
+                .progressBarUsed{
+                    height: 15px;
+                    width: 67%;
+                    border-radius: 20px;
+                    background: linear-gradient(90deg, rgba(154,59,231,1) 30%, rgba(255,11,245,1) 100%);
+                }
+            }
+            p{
+                margin: 0 10px;
+            }
+        }
+        .usageOptions{
+            ul{
+                list-style: none;
+                margin: 35px 25px 25px 25px;
+                a{
+                    color: $black;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                li{
+                    span{
+                        background: linear-gradient(90deg, rgba(154,59,231,1) 30%, rgba(255,11,245,1) 100%);
+                        padding: 10px 5px;
+                        color: $white;
+                        border-radius: 30px;
+                        margin: 0px 5px;
+                    }
+                }
+            }
+        }
+        .terms{
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                li{
+                    margin: 0 15px 0 0;
+                    a{
+                        color: $black;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
     }
     aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         background-color: $cloudColor;
         grid-area: aside;
-        padding: 15px;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
         box-shadow:  $cloudShadow;
+        p{
+            margin: 30px 10px;
+        }
+        .asideCard{
+            margin-top: 35px;
+            width: 125px;
+            height: 125px;
+            p{
+                color: transparent;
+                font-size: 0.75em;
+                margin: 0;
+            }
+            img{
+                width: 110px;
+                z-index: 1;
+                border-radius: 20px;
+                transition: all 0.4s ease;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: $cloudShadow;
+                }
+            }
+            &:hover{
+                p{
+                    transform: translateY(130px);
+                    color: $black;
+                    transition: all 0.4s ease-out;
+                }
+            }
+        }
     }
 }

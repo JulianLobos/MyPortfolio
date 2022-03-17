@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/cloud/cloud-solid.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
@@ -12,17 +13,18 @@
 </head>
 <body class="bodyCloud">
     <header>
-        <p class="welcome">Bienvenidos!</p>
-        <div class="logo">CLOUD</div>
-        <a href="#"><p class="getPro">¡Hazte PRO!</p></a>
+        <p class="welcome">Welcome Julian!</p>
+        <a href="#"><p class="logo">CloudBox</p></a>
+        <a href="#"><p class="getPro">¡Get PRO!</p></a>
     </header>
     <div class="navbar">
         <ul class="navSections">
-            <li class="navHome"><img src="../img/cloud/home.svg" alt="Home"></li>
-            <li class="navGallery"><img src="../img/cloud/gallery.svg" alt="Gallery"></li>
-            <li class="navDocuments"><img src="../img/cloud/document.svg" alt="Documents"></li>
-            <li class="navSettings"><img src="../img/cloud/settings.svg" alt="Settings"></li>
-            <li class="navAccount"><img src="../img/cloud/profile.svg" alt="Profile"></li>
+            <li class="navHome"><a href="#"><img src="../img/cloud/home.svg" alt="Home"></a></li>
+            <li class="navGallery"><a href="#"><img src="../img/cloud/gallery.svg" alt="Gallery"></a></li>
+            <li class="navDocuments"><a href="#"><img src="../img/cloud/document.svg" alt="Documents"></a></li>
+            <li class="navSettings"><a href="#"><img src="../img/cloud/settings.svg" alt="Settings"></a></li>
+            <li class="navAccount"><a href="#"><img src="../img/cloud/profile.svg" alt="Profile"></a></li>
+            <li class="navAccount"><a href="#"><img src="../img/cloud/trash-can-regular.svg" alt="Trash"></a></li>
         </ul>
     </div>
     <main>
@@ -45,18 +47,51 @@
                 <p class="othersNumber">193 others</p>
             </div>
         </div>
+        <p class="title">Usage</p>
         <div class="usage">
-            <div class="storageUsage">
-                <p>30gb/100gb used</p>
+            <div class="progressBarTotal">
+                <div class="progressBarUsed"></div>
             </div>
+            <p>67% of 20gb used.</p>
         </div>
-        
+        <div class="usageOptions">
+            <ul>
+                <li><a href="#">Free up space!</a></li>
+                <li><a href="#">Do you want more space? ¡Get PRO!</a><span>25% off</span></li>
+                <li><a href="#">Download the desktop version</a></li>
+            </ul>
+        </div>
+        <div class="terms">
+            <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li>© CloudBox Inc.</li>
+            </ul>
+        </div>     
     </main>
     <aside>
-        <p class="titleAside">Recently viewed docuemnts</p>
+        <p class="titleAside">Recently viewed documents</p>
+        <div class="asideCard">
+            <p class="itemName">
+                cba.jpg
+            </p>
+            <img src="../img/cloud/cba.jpg" alt="Córdoba Capital">         
+        </div>
+        <div class="asideCard">
+            <p class="itemName">
+                ringo.jpg
+            </p>
+            <img src="../img/cloud/rin.jpg" alt="Dog picture">
+        </div>
+        <div class="asideCard">
+            <p class="itemName">
+                redCar.jpg
+            </p>
+            <img src="../img/cloud/redCar.jpg" alt="A red car on the road">
+        </div>
     </aside>
-
-
-    
 </body>
 </html>

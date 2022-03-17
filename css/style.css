@@ -599,7 +599,8 @@
 /* -------------------------------------- STYLES CLOUD STORAGE DASHBOARD -------------------------------------- */
 .bodyCloud {
   font-family: 'Rubik', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
+  color: #222222;
   background-color: #eff2f9;
   display: grid;
   grid-template-columns: 70px 26% 26% 26% 8% auto;
@@ -616,6 +617,23 @@
     grid-area: header;
     box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff;
     z-index: 1; }
+    .bodyCloud header .logo {
+      font-weight: 300;
+      font-size: 1.5em;
+      cursor: pointer; }
+    .bodyCloud header a {
+      text-decoration: none;
+      color: #222222; }
+    .bodyCloud header .getPro {
+      color: #e2e2e2;
+      background-color: #812897;
+      background: linear-gradient(90deg, #9a3be7 30%, #ff0bf5 100%);
+      padding: 10px 20px;
+      border-radius: 30px;
+      box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff;
+      transition: all 0.4s ease; }
+      .bodyCloud header .getPro:hover {
+        transform: scale(1.05); }
   .bodyCloud .navbar {
     background-color: #eff2f9;
     box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff;
@@ -640,12 +658,21 @@
       .bodyCloud .navbar ul li {
         padding: 23px; }
         .bodyCloud .navbar ul li img {
-          width: 20px; }
+          width: 25px;
+          height: 25px;
+          filter: invert(49%) sepia(11%) saturate(611%) hue-rotate(165deg) brightness(96%) contrast(89%); }
+        .bodyCloud .navbar ul li:hover {
+          background-color: #e4ebf1;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px; }
       .bodyCloud .navbar ul .navHome {
         background-color: #e4ebf1;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px; }
   .bodyCloud main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #eff2f9;
     grid-area: main;
     margin: 15px;
@@ -667,8 +694,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
         border-radius: 30px;
         box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff;
         margin: 10px 20px;
@@ -682,13 +709,82 @@
           height: 35px;
           margin: 10px;
           filter: invert(51%) sepia(27%) saturate(267%) hue-rotate(165deg) brightness(89%) contrast(84%); }
+    .bodyCloud main .usage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 25px; }
+      .bodyCloud main .usage .progressBarTotal {
+        height: 15px;
+        width: 200px;
+        background-color: #dadada;
+        border-radius: 20px; }
+        .bodyCloud main .usage .progressBarTotal .progressBarUsed {
+          height: 15px;
+          width: 67%;
+          border-radius: 20px;
+          background: linear-gradient(90deg, #9a3be7 30%, #ff0bf5 100%); }
+      .bodyCloud main .usage p {
+        margin: 0 10px; }
+    .bodyCloud main .usageOptions ul {
+      list-style: none;
+      margin: 35px 25px 25px 25px; }
+      .bodyCloud main .usageOptions ul a {
+        color: #222222;
+        text-decoration: none; }
+        .bodyCloud main .usageOptions ul a:hover {
+          text-decoration: underline; }
+      .bodyCloud main .usageOptions ul li span {
+        background: linear-gradient(90deg, #9a3be7 30%, #ff0bf5 100%);
+        padding: 10px 5px;
+        color: #e2e2e2;
+        border-radius: 30px;
+        margin: 0px 5px; }
+    .bodyCloud main .terms ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .bodyCloud main .terms ul li {
+        margin: 0 15px 0 0; }
+        .bodyCloud main .terms ul li a {
+          color: #222222;
+          text-decoration: none; }
+          .bodyCloud main .terms ul li a:hover {
+            text-decoration: underline; }
   .bodyCloud aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: #eff2f9;
     grid-area: aside;
-    padding: 15px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff; }
+    .bodyCloud aside p {
+      margin: 30px 10px; }
+    .bodyCloud aside .asideCard {
+      margin-top: 35px;
+      width: 125px;
+      height: 125px; }
+      .bodyCloud aside .asideCard p {
+        color: transparent;
+        font-size: 0.75em;
+        margin: 0; }
+      .bodyCloud aside .asideCard img {
+        width: 110px;
+        z-index: 1;
+        border-radius: 20px;
+        transition: all 0.4s ease;
+        cursor: pointer; }
+        .bodyCloud aside .asideCard img:hover {
+          transform: scale(1.05);
+          box-shadow: 5px 5px 30px #d1d2d4, -5px -5px 30px #ffffff; }
+      .bodyCloud aside .asideCard:hover p {
+        transform: translateY(130px);
+        color: #222222;
+        transition: all 0.4s ease-out; }
 
 /* ---------------------------- Media queries ---------------------------- */
 @media (max-width: 768px) {
