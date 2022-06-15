@@ -120,15 +120,62 @@ $(document).ready(function(){
   }).change();
 }); 
 
-// script toggle
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
 // script goles
 
 $("#partidoFecha1").click(function() {
   $(this).toggleClass("on");
   $("#goles").slideToggle();
 });
+
+// tippy
+tippy('#html', {
+  content: 'HTML',
+  placement: 'top',
+});
+
+tippy('#css', {
+  content: 'CSS',
+  placement: 'top',
+});
+
+tippy('#js', {
+  content: 'JavaScript',
+  placement: 'top',
+});
+
+tippy('#npm', {
+  content: 'npm',
+  placement: 'top',
+});
+
+tippy('#sass', {
+  content: 'Sass',
+  placement: 'top',
+});
+
+tippy('#git', {
+  content: 'Git',
+  placement: 'top',
+});
+
+tippy('#github', {
+  content: 'GitHub',
+  placement: 'top',
+});
+
+tippy('#bootstrap', {
+  content: 'Bootstrap',
+  placement: 'top',
+});
+
+tippy('#figma', {
+  content: 'Figma',
+  placement: 'top',
+});
+
+tippy('#material', {
+  content: 'Material UI',
+  placement: 'top',
+});
+
+
