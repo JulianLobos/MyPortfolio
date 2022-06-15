@@ -8,7 +8,7 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px #ccc solid;
-        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
         margin-bottom: 30px;
         a{
             text-decoration: none;
@@ -48,10 +48,15 @@
             .listItem{
                 display: inline-block;
                 margin-right: 10px;
+                div{
+                    -webkit-animation: telefono 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite ;
+	                animation: telefono 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite ;
+                }
                 a{
                     text-decoration: none;
                     color: $black;
                     transition: all 0.4s ease;
+                    display: flex;
                     &:hover{
                         color: $index__fondo3;
                     }
@@ -67,10 +72,12 @@
             div{
                 width: 100%;
                 height: 5px;
+                border-radius: 30px;
                 background: $black;
                 margin: 4px auto;
                 transition: all 0.3s;
                 backface-visibility: hidden;
+                cursor: pointer;
             }
         }
     }
@@ -85,20 +92,31 @@
             justify-content: center;
             align-items: center;
             margin: 0 0 3rem 0;
+            .aboutMeText{
+                font-size: 1.5rem;
+                margin: 0 1rem 3rem 1rem;
+            }
             .profilePhoto{
                 width: 200px;
+                margin: 1rem;
             }
             .languagesAndTech{
                 color: $index__fondo3;
                 font-weight: 600;
                 font-size: 2.5rem;
                 text-transform: uppercase;
+                margin: 1rem;
+                text-align: center;
             }
             .iconsLanguages{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+                padding: 1rem 2.5rem;
+                margin: 1rem;
+                border-radius: 30px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
                 img{
                     width: 60px;
                     margin: 10px;
@@ -114,7 +132,6 @@
         }
         .projectList{
             display: flex;
-            flex-wrap: wrap;
             list-style: none;
             justify-content: center;
             flex-direction: column;
@@ -202,4 +219,3 @@
         }
     }
 }
-

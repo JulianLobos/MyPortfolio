@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    .bodyIndex{
+        main{
+            .aboutMe{
+                .profilePhoto{
+                    width: 150px;
+                }
+                .languagesAndTech{
+                    font-size: 2rem;
+                }
+            }
+            .projectList{
+                li{
+                    height: 25vh;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
