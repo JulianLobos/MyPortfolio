@@ -182,6 +182,13 @@
         background-repeat: no-repeat; }
         .bodyIndex main .projectList .p6:hover {
           background-image: url("../img/project6.png"); }
+      .bodyIndex main .projectList .p7 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../img/project7.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+        .bodyIndex main .projectList .p7:hover {
+          background-image: url("../img/project7.png"); }
 
 /* -------------------------------------- ESTILOS SIGN UP -------------------------------------- */
 .bodySignUp {
