@@ -82,6 +82,7 @@
                 border-radius: 15px;
                 box-shadow: rgb(19, 22, 26) 0px 20px 30px -10px;
                 transition: all 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                position: relative;
                 .cardTitle{
                     text-align: center;
                     margin: 0 0 15px 0;
@@ -107,7 +108,7 @@
                         transform: unset;
                     }
                     .cardText{
-                        bottom: 150px;
+                        bottom: 20px;
                         opacity: 1;
                         z-index: 0;
                         transition: all 0.5s ease 0s;
