@@ -196,6 +196,13 @@
         background-repeat: no-repeat; }
         .bodyIndex main .projectList .p8:hover {
           background-image: url("../img/project8.png"); }
+      .bodyIndex main .projectList .p9 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../img/jurold.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+        .bodyIndex main .projectList .p9:hover {
+          background-image: url("../img/jurold.png"); }
 
 /* -------------------------------------- ESTILOS SIGN UP -------------------------------------- */
 .bodySignUp {
