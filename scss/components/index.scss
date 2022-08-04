@@ -243,6 +243,15 @@
                     background-image: url("../img/jurold.png");     
                 }
             }
+            .p10{
+                background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("../img/project10.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                &:hover{
+                    background-image: url("../img/project10.png");     
+                }
+            }
         }
     }
 }
